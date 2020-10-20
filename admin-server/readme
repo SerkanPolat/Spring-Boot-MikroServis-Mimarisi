@@ -1,0 +1,18 @@
+Eureka'da olan servisler
+
+localhost:8508/applications adresinde
+
+Servislerin hepsi Admin Client dependency sahip olmasi
+Admin Server'in versionu ile Admin Client dependency lerin versionlarin ayni olmasi
+gerekmektedir.
+
+Servislerin application.properties dosyasinda
+
+spring.boot.admin.client.url=http://localhost:8080
+management.endpoints.web.exposure.include=*
+
+Application.yml turunede donusturulebilir.
+
+
+Spring Boot Admin
+codecentric.github.io/spring-boot-admin/current

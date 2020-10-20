@@ -1,0 +1,28 @@
+version: "2"
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    environment:
+      - RABBITMQ_DEFAULT_USER=serkanp
+      - RABBITMQ_DEFAULT_PASS=serkan
+    ports:
+    - '5672:5672'
+    - '15672:15672'
+  elasticsearch:
+    image: elasticsearch:7.4.2
+    environment:
+      discovery.type: single-node
+    ports:
+    - '9200:9200'
+    - '9300:9300'
+  mysql:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: serkanpolat
+    ports:
+    - '3306:3306'
+  cassandra:
+    image: cassandra
+    ports:
+      - '9042:9042'

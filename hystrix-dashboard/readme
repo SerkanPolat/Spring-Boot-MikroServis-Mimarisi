@@ -1,0 +1,12 @@
+hystrix Yapilan isteklerin ve servislerin durumunu goruntulemek icin kullanilir.
+
+Gateway-Serverinin actuatorde bulunan ozelliklerin adres
+ bilgilerini kullanarak gorsel olarak servisleri goruntuler.
+
+Ornek bu proje icin actuator
+
+8088 = Gateway-Server portudur.
+localhost:8088/actuator
+
+Hystrix application.yml dosyasina sahip olmadigindan SpringBoot defaultPortta(8080)
+de Baslatacaktir.

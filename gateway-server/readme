@@ -1,0 +1,4 @@
+Yonlendirme ve filtreleme kurallari application.yml dosyasinda yapilmaktadir.
+
+Gateway-server kendisine gelen istekleri diger servislere yonlendirir eureka ile beraber calisir.
+

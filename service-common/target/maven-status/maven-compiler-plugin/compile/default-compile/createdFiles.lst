@@ -1,0 +1,3 @@
+com\sp\client\config\FeignConfig.class
+com\sp\client\contract\HesapDTO.class
+com\sp\client\AccountServiceClient.class
